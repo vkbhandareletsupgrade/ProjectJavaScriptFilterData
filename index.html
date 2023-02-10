@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Filter Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/fontAwesome/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left" id="getLeft">
+
+            <select name="" id="category" onchange=(category,this.value)>
+                <option value="">Select</option>
+                <option value="lenovo">LENOVO</option>
+                <option value="dell">DELL</option>
+                <option value="hp">HP</option>
+            </select>
+        
+            <!-- <select name="" onchange="setFilters('processor',this.value)">
+                <option value="">Select</option>
+                <option value="i3">i3</option>
+                <option value="i5">i5</option>
+                <option value="i7">i7</option>
+            </select>
+
+            <select name="" onchange="setFilters('graphics',this.value)">
+                <option value="">Select</option>
+                <option value="amd">AMD</option>
+                <option value="intel">INTEL</option>
+                <option value="nvidea">Nvidea</option>
+            </select>
+
+            <select name="" onchange="setFilters('ram',this.value)">
+                <option value="">Select</option>
+                <option value="16GB">16GB</option>
+                <option value="8GB">8GB</option>
+                <option value="4GB">4GB</option>
+            </select>
+            <select name="" onchange="setFilters('rom',this.value)">
+                <option value="">Select</option>
+                <option value="1TB">1TB</option>
+                <option value="512GB">512GB</option>
+                <option value="256GB">256GB</option>
+            </select> -->
+            <button onclick="filter()">
+                filter
+            </button>
+
+        </div>
+        <main>
+            <section class="main-container">
+               
+                <header>
+                    <i class="fa fa-hamburger" id="hideLeft"></i>
+                    <h3>Laptop Buying Guide</h3>
+                    <input type="search" placeholder="Search...">
+               </header>
+                
+               <div class="table-data">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Brand</th>
+                            <th>Processor</th>
+                            <th>Graphics</th>
+                            <th>RAM</th>
+                            <th>ROM</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+               </div>
+
+            </section>
+        </main>
+    </div>
+    <script src="./index.js"></script>
+    <!-- <script src="./fontAwesome/js/all.min.js"></script> -->
+</body>
+</html>
